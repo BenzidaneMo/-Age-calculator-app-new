@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <form>
+        <div>
+          <label for="dayInput">Day</label>
+          <input type="text" name="day" id="dayInput" placeholder="DD">
+          <span class="displayErr"></span>
+        </div>
+        <div>
+          <label for="monthInput">Month</label>
+          <input type="text" name="month" id="monthInput" placeholder="MM">
+          <span class="displayErr"></span>
+        </div>
+        <div>
+          <label for="yearInput">Year</label>
+          <input type="text" name="year" id="yearInput" placeholder="YYYY">
+          <span class="displayErr"></span>
+        </div>
+        <button type="submit"></button>
+      </form>
+      <div id="linebreak"></div>
+      <div class="dis-res">
+        <span>
+          <p id="dissyear">--</p>
+          <p>years</p>
+        </span>
+        <span>
+          <p id="dissmonth">--</p>
+          <p>months</p>
+        </span>
+        <span>
+          <p id="dissday">--</p>
+          <p>days</p>
+        </span>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/BenzidaneMo">Benzidane Mohamed</a>.
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
