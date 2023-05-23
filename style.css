@@ -33,9 +33,10 @@ body {
 
 .container {
   width: 43em;
-  height: 35em;
+  height: 34em;
   border-radius: 20px 20px 30% 20px;
-  padding: 30px;
+  padding: 35px;
+  box-shadow: .5px 1px 20px rgba(143, 143, 143, 0.1);
   background-color: #ffffff;
 }
 
@@ -50,7 +51,15 @@ form div {
   flex-direction: column;
 }
 
-input {
+form div label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+form div input {
   height: 60px;
   width: 130px;
   border-radius: 6px;
@@ -62,45 +71,53 @@ input {
   padding: 0 20px 0;
 }
 
-
-
-
-
-
-
-
-
-
+.displayErr {
+  height: 1em;
+  width: 130px;
+}
 
 button {
+  position: relative;
+  translate: 87px 80px;
   width: 50px;
   height: 50px;
   padding: 40px;
   justify-content: end;
-  background-color: #213547;
+  border: none;
+  background-color: darkviolet;
   background-image: url(assets/images/icon-arrow.svg);
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
   border-radius: 50%;
-
 }
 
-#linebreaker {
-  background-color: #242424;
-  height: 40px;
-  width: 100vw;
+button:active {
+  transform: scale(1.1) translateY(10px);
+  transition: transform 1s ease-in-out;
+}
+
+#linebreak {
+  margin-block: 35px;
+  border: none;
+  border-top: 2px solid rgba(27, 27, 27, 0.1);
 }
 
 .dis-res {
-  font-size: 4.5rem;
+  font-size: 5.3rem;
   font-weight: 800;
   margin-top: 40px;
+  font-style: italic;
+  line-height: 1.1em;
 }
 
 .dis-res span {
   display: flex;
   gap: 10px;
+}
+
+.dis-res span p:nth-child(1) {
+  color: darkviolet;
 }
 
 
