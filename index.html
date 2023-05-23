@@ -15,22 +15,24 @@
       <form>
         <div>
           <label for="dayInput">Day</label>
-          <input type="text" name="day" id="dayInput" placeholder="DD">
-          <span class="displayErr"></span>
+          <input type="number" name="day" id="dayInput" placeholder="DD">
+          <span id="dayErr" class="requiredErr"></span>
         </div>
         <div>
           <label for="monthInput">Month</label>
-          <input type="text" name="month" id="monthInput" placeholder="MM">
-          <span class="displayErr"></span>
+          <input type="number" name="month" id="monthInput" placeholder="MM">
+          <span id="monthErr" class="requiredErr"></span>
         </div>
         <div>
           <label for="yearInput">Year</label>
-          <input type="text" name="year" id="yearInput" placeholder="YYYY">
-          <span class="displayErr"></span>
+          <input type="number" name="year" id="yearInput" placeholder="YYYY">
+          <span id="yearErr" class="requiredErr"></span>
         </div>
-        <button type="submit"></button>
+        <div class="butt--content">
+          <button type="submit"></button>
+          <hr id="linebreak" />
+        </div>
       </form>
-      <hr id="linebreak" />
       <div class="dis-res">
         <span>
           <p id="dissyear">--</p>
