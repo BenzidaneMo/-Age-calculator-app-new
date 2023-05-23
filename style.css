@@ -68,11 +68,15 @@ form div input {
   border-color: gainsboro;
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
   padding: 0 20px 0;
 }
 
-.displayErr {
-  height: 1em;
+.requiredErr {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+  height: fit-content;
   width: 130px;
 }
 
@@ -90,12 +94,14 @@ button {
   background-size: 40px;
   background-position: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-button:active {
-  transform: scale(1.1) translateY(10px);
-  transition: transform 1s ease-in-out;
+button:hover {
+  background-color: #213547;
+  transition: background-color 1s ease-in-out;
 }
+
 
 #linebreak {
   margin-block: 35px;
@@ -120,7 +126,13 @@ button:active {
   color: darkviolet;
 }
 
+.clr--red {
+  color: red;
+}
 
+.brd--clr--red {
+  border-color: red;
+}
 
 /* button {
   border-radius: 8px;
